@@ -461,7 +461,7 @@ button {
   background-color: var(--interactive-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 321px) and (max-width: 768px) {
   .hero-section {
     max-width: 768px;
     background-image: linear-gradient(
@@ -499,7 +499,7 @@ button {
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 769px) {
   .hero-section {
     max-width: 1440px;
     background-image: linear-gradient(
@@ -652,8 +652,6 @@ button {
 }
 
 .team-box {
-  width: 232px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 8px;
