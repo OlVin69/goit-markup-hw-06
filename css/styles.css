@@ -394,6 +394,12 @@ button {
     flex-direction: row;
     gap: 40px;
   }
+
+  .address-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
 }
 
 /* HERO SECTION */
@@ -500,7 +506,7 @@ button {
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1158px) {
   .hero-section {
     max-width: 1440px;
     background-image: linear-gradient(
@@ -640,19 +646,22 @@ button {
   margin-left: auto;
 }
 
+.team-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 72px;
+}
+
 .team-item {
-  width: 264px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-background-color);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.team-item:not(:last-child) {
-  margin-bottom: 72px;
 }
 
 .team-box {
@@ -709,15 +718,10 @@ button {
 
 @media screen and (min-width: 768px) {
   .team-list {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     column-gap: 24px;
     row-gap: 64px;
-  }
-
-  .team-item {
-    margin: 0;
   }
 }
 
@@ -725,10 +729,6 @@ button {
   .team-list {
     justify-content: space-between;
     gap: 24px;
-  }
-
-  .team-item {
-    width: calc((100% - 72px) / 4);
   }
 }
 
@@ -960,12 +960,9 @@ footer > .container {
   border-radius: 4px;
 }
 
-.subscribe-icon {
-  margin-left: 16px;
-}
-
 @media screen and (min-width: 768px) {
   footer > .container {
+    max-width: 552px;
     flex-wrap: wrap;
     align-items: baseline;
     flex-direction: row;
@@ -1020,13 +1017,18 @@ footer > .container {
   }
 
   footer > .container {
+    max-width: 1158px;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    gap: 80px;
+    column-gap: 0;
   }
 
   .footer-logo-box {
-    margin-right: 40px;
+    margin-right: 120px;
+  }
+
+  .footer-social {
+    margin-right: 80px;
   }
 
   .subscribe-input {
